@@ -1,0 +1,29 @@
+<style>
+    h1::before {
+        content:'1. '
+    }
+    h1::after {
+        content: ' - PC'
+    }
+    
+    @media (max-width: 1280px){
+        h1::before {
+        content:'2. '
+        }
+        h1::after {
+            content: ' : Table'
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        h1::before {
+        content:'3. '
+        }
+        h1::after {
+            content: ' : Fold'
+        }
+    }
+</style>
+
+<h1>미디어쿼리</h1>
+<p>어쩌고</p>
