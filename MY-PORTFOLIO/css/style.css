@@ -1,0 +1,34 @@
+#header {background: url(../img/header_bg.jpg);}
+.container {width: 1000px;}
+.header {height: 327px;}
+.header_menu {text-align: right;}
+.header_menu a {
+    padding: 8px 0px 6px 10px;
+    display: inline-block;
+}
+.header_title {
+    text-align: center;
+    margin-top: 55px;
+    font-family: 'NanumGothicBold';
+}
+.header_title h1 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+    background: #51b0dc;
+    padding: 5px 30px 5px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+.header_title a {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    background-color: #4a9abf;
+    padding: 10px 20px 10px 20px;
+    margin-top: -7px;
+    transition: box-shadow 0.25s ease-in-out;
+}
+.header_title a:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
