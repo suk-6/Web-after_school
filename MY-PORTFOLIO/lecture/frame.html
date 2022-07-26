@@ -5,6 +5,7 @@
      <link rel="stylesheet"href="../css/style.css">
      <link rel="stylesheet"href="../css/font-awasome.css">
      <link rel="stylesheet"href="../css/main.css">
+     <link rel="stylesheet" href="../css/slick.css">
 
      <link rel="stylesheet"href="../css/font.googleapis.com/css?family=Nanum+Gothic">
      <link rel="stylesheet"href="../css/font.googleapis.com/css?family=Nanum+Brush+Script">
@@ -69,7 +70,46 @@
             </section>
             <section id="cont_center">
                 <h3 class="ir_su">반응형 사이트 가운데 컨텐츠</h3>
-                <article class="column col4"><h4>반응형 사이트 가운데 컨텐츠1</h4></article>
+                <article class="column col4">
+                    <h4>반응형 사이트 가운데 컨텐츠1</h4>
+                    <p id="col_desc">slick.js를 이용한 이미지 슬라이드 효과입니다.</p>
+                    <div class="slider">
+                        <div>
+                            <figure>
+                                <img src="../img/slider001.jpg" alt="이미지1">
+                                <figcaption><em>Responsive Site</em><span>첫번째 슬라이드</span></figcaption>
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="../img/slider001.jpg" alt="이미지2">
+                                <figcaption><em>Responsive Site</em><span>두번째 슬라이드</span></figcaption>
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="../img/slider001.jpg" alt="이미지3">
+                                <figcaption><em>Responsive Site</em><span>세번째 슬라이드</span></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+                <article class="column col5">
+                    <h4>필터 이펙트</h4>
+                    <p class="col_desc">어떤 일이 벌어질까요?</p>
+                    <div class="lightbox square clearfix">
+                        <a href="../img/light01_s.jpg"><img src="../img/light01.jpg" alt="이미지"><em>blur</em></a>
+                        <a href="../img/light02_s.jpg"><img src="../img/light02.jpg" alt="이미지"><em>blur</em></a>
+                        <a href="../img/light03_s.jpg"><img src="../img/light03.jpg" alt="이미지"><em>blur</em></a>
+                        <a href="../img/light04_s.jpg"><img src="../img/light04.jpg" alt="이미지"><em>blur</em></a>
+                        <a href="../img/light05_s.jpg"><img src="../img/light05.jpg" alt="이미지"><em>blur</em></a>
+                        <a href="../img/light06_s.jpg"><img src="../img/light06.jpg" alt="이미지"><em>blur</em></a>
+                        <a href="../img/light07_s.jpg"><img src="../img/light07.jpg" alt="이미지"><em>blur</em></a>
+                        <a href="../img/light08_s.jpg"><img src="../img/light08.jpg" alt="이미지"><em>blur</em></a>
+                        <a href="../img/light09_s.jpg"><img src="../img/light09.jpg" alt="이미지"><em>blur</em></a>
+                        <a href="../img/light10_s.jpg"><img src="../img/light10.jpg" alt="이미지"><em>blur</em></a>
+                    </div>
+                </article>
             </section>
             <section id="cont_right">
                 <h3 class="ir_su">반응형 사이트 오른쪽 컨텐츠</h3>
@@ -87,6 +127,20 @@
 </footer>
 <script src="../js/jquery.min_1.12.4.js"></script>
 <script src="../js/slick.min.js"></script>
-<script src="../js/main.js"></script>
+<script>
+    $(".slider").slick({
+        dots: true,
+        autoplay: true,
+        autoplauspeed: 3000,
+        arrows: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                arows: true,
+                dots: false
+            }
+        }]
+    })
+</script>
 </body>
 </html>

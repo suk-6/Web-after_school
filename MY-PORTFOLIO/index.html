@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <title>남우석 포트폴리오</title>
 
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"href="../css/reset.css">
+    <link rel="stylesheet"href="../css/style.css">
+    <link rel="stylesheet"href="../css/font-awasome.css">
+    <link rel="stylesheet"href="../css/main.css">
+
+    <link rel="stylesheet"href="../css/font.googleapis.com/css?family=Nanum+Gothic">
+    <link rel="stylesheet"href="../css/font.googleapis.com/css?family=Nanum+Brush+Script">
+    <link rel="stylesheet"href="../css/font.googleapis.com/css?family=Abel">
 </head>
 <body>
     <header id="header">
@@ -48,7 +52,7 @@
                     <article class="column col4">
                         <h4>반응형 사이트 가운데 컨텐츠1</h4>
                         <p id="col_desc">slick.js를 이용한 이미지 슬라이드 효과입니다.</p>
-                        <div id="slider">
+                        <div class="slider">
                             <div>
                                 <figure>
                                     <img src="img/slider001.jpg" alt="이미지1">
@@ -81,7 +85,23 @@
     <footer>여기는 화면 맨 아래입니다.</footer>
 
 
-    
+    <script src="./js/jquery.min_1.12.4.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script>
+        $(".slider").slick({
+            dots: true,
+            autoplay: true,
+            autoplauspeed: 3000,
+            arrows: false,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    arows: true,
+                    dots: false
+                }
+            }]
+        })
+    </script>
     <script src="js/script.js"></script>
 </body>
 </html>
