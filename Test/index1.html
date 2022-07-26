@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>남우석 포트폴리오</title>
+
+    <link rel="stylesheet"href="../css/reset.css">
+    <link rel="stylesheet"href="../css/style.css">
+    <link rel="stylesheet"href="../css/font-awasome.css">
+    <link rel="stylesheet"href="../css/main.css">
+
+    <link rel="stylesheet"href="../css/font.googleapis.com/css?family=Nanum+Gothic">
+    <link rel="stylesheet"href="../css/font.googleapis.com/css?family=Nanum+Brush+Script">
+    <link rel="stylesheet"href="../css/font.googleapis.com/css?family=Abel">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header">
+                    <div class="header_menu">
+                        <a href="#">Blog</a>
+                        <a href="https://github.com/suk-6">Github</a>
+                        <a href="https://gitlab.dyhs.kr/suk-6">Gitlab</a>
+                        <a href="https://wiki.dyhs.kr/wiki/남우석">Wiki</a>
+                        <a href="#">Homepage</a>
+                    </div>
+                    <div class="header_title">
+                        <h1>나는 으뜸 개발자!!!</h1><br>
+                        <a href="https://dukyoung.hs.kr">dukyoung.hs.kr</a>
+                    </div>
+                    <div class="header_icon">
+                        <ul>
+                            <li><i class="fa fa-html5"></i></li>
+                            <li><i class="fa fa-github"></i></li>
+                            <li><i class="fa fa-facebook"></i></li>
+                            <li><i class="fa fa-twitter"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>여기는 메뉴가 있는 곳</nav>
+    <article>Sub-title</article>
+    <main>
+        <section id="contents">
+            <div id="container">
+                <section id="cont_left">
+                    <h3 class="ir_su"></h3>
+                    <article class="column col4">
+                        <h4>반응형 사이트 가운데 컨텐츠1</h4>
+                        <p id="col_desc">slick.js를 이용한 이미지 슬라이드 효과입니다.</p>
+                        <div class="slider">
+                            <div>
+                                <figure>
+                                    <img src="img/slider001.jpg" alt="이미지1">
+                                    <figcaption><em>Responsive Site</em><span>첫번째 슬라이드</span></figcaption>
+                                </figure>
+                            </div>
+                            <div>
+                                <figure>
+                                    <img src="img/slider001.jpg" alt="이미지2">
+                                    <figcaption><em>Responsive Site</em><span>두번째 슬라이드</span></figcaption>
+                                </figure>
+                            </div>
+                            <div>
+                                <figure>
+                                    <img src="img/slider001.jpg" alt="이미지3">
+                                    <figcaption><em>Responsive Site</em><span>세번째 슬라이드</span></figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </section>
+        <section>
+            <section>좌측 컨텐츠</section>
+            <section>가운데 컨텐츠</section>
+            <section>우측 컨텐츠</section>
+        </section>
+    </main>
+    <footer>여기는 화면 맨 아래입니다.</footer>
+
+
+    <script src="./js/jquery.min_1.12.4.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script>
+        $(".slider").slick({
+            dots: true,
+            autoplay: true,
+            autoplauspeed: 3000,
+            arrows: false,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    arows: true,
+                    dots: false
+                }
+            }]
+        })
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
